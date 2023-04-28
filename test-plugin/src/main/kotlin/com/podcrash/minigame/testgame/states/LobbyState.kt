@@ -1,10 +1,15 @@
 package com.podcrash.minigame.testgame.states
 
+import com.podcrash.minigame.core.event.UpdateEvent
 import com.podcrash.minigame.core.state.State
+import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.player.PlayerJoinEvent
+import org.bukkit.event.player.PlayerQuitEvent
 
 class LobbyState: State() {
+
+    val requiredPlayers = 2
 
     override fun onStart() {
         TODO("Not yet implemented")
@@ -12,21 +17,5 @@ class LobbyState: State() {
 
     override fun onEnd() {
         TODO("Not yet implemented")
-    }
-
-    @EventHandler
-    fun onJoin(event: PlayerJoinEvent) {
-        // directly do events
-    }
-
-    fun countdown() {
-        // 5
-        // 4
-        // 3
-        // 2
-        // 1
-
-        // End lobby state and starts pre-game state
-        end()
     }
 }
