@@ -18,4 +18,15 @@ class LobbyState: State() {
     fun onJoin(event: PlayerJoinEvent) {
         // directly do events
     }
+
+    fun countdown() {
+        // 5
+        // 4
+        // 3
+        // 2
+        // 1
+
+        // End lobby state and starts pre-game state
+        end()
+    }
 }

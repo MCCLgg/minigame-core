@@ -4,9 +4,10 @@ import org.bukkit.event.Listener
 
 abstract class State: Listener {
 
+    var ended = false
+
     fun end() {
-        // find a way to call the next function from state manager
-        onEnd()
+        ended = true
     }
 
     abstract fun onStart()
