@@ -1,0 +1,4 @@
+name: TestGame
+version: 1.0-SNAPSHOT
+main: com.podcrash.minigame.testgame.TestGamePlugin
+api-version: 1.19
